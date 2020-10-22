@@ -1,0 +1,276 @@
+
+<div class="container">
+    <h2>Visa Registration Form</h2>
+    <form #registerform="ngForm" (ngSubmit)="registerUser()">
+
+      <div class="form-group">
+        <label for="applicantId">Applicant Id:</label>
+        <input type="text" class="form-control" id="applicantId" placeholder="Enter The Id" name="applicantId">
+      </div>
+
+      <div class="form-group">
+        <label for="applicantName">Applicant Name:</label>
+        <input type="text" class="form-control" id="applicantName" placeholder="Enter Name" name="applicantName">
+      </div>
+      <div class="form-group">
+        <label for="passportNumber">Passport Number:</label>
+        <input type="text" class="form-control" id="passportNumber" placeholder="Enter passport Number" name="passportNumber">
+      </div>
+      <div class="form-group">
+        <label for="countryOfNationality">Country Of Nationality:</label>
+        <input type="text" class="form-control" id="countryOfNationality" placeholder="Enter Nationality" name="countryOfNationality">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+
+      <div class="form-group">
+       <label for="birthday">Date Of Birth:</label>
+       <input type="date" id="birthday" name="birthday">      
+      </div>
+      
+      <div class="form-group">
+        <label for="birthday">Date Of Application:</label>
+        <input type="date" id="doapp" name="doapp">      
+       </div>
+
+       <div class="form-group">
+        <label for="typeOfVisa">Type Of Visa:</label>
+        <input type="text" class="form-control" id="typeOfVisa" placeholder="Visa Type" name="typeOfVisa">
+      </div>
+
+      <div class="form-group">
+        <label for="serviceOption">Service Option:</label>
+        <input type="text" class="form-control" id="serviceOption" placeholder="Enter Service Type" name="serviceOption">
+      </div>
+
+      <div class="form-group">
+        <label for="durationOfVisa">Duration Of Visa:</label>
+        <input type="text" class="form-control" id="durationOfVisa" placeholder="Duration Of Visa In Months" name="durationOfVisa">
+      </div>
+
+      <div class="form-group">
+        <label for="totalFee">Total Fee:</label>
+        <input type="text" class="form-control" id="totalFee" placeholder="Enter the Total Fee" name="totalFee">
+      </div>
+
+      <div class="form-group">
+        <label for="submissionMethod">Submission Method:</label>
+        <input type="text" class="form-control" id="submissionMethod" placeholder="Enter the Submission Method" name="submissionMethod">
+      </div>
+
+      <div class="form-group">
+        <label for="paymentReference">Payment Reference:</label>
+        <input type="text" class="form-control" id="paymentReference" placeholder="Enter the Payment Reference" name="paymentReference">
+      </div>
+
+      <div class="form-group">
+        <label for="contactEmail">Email:</label>
+        <input type="email" class="form-control" id="contactEmail" placeholder="Enter the Email Address" name="contactEmail">
+      </div>
+
+      <div class="form-group">
+        <label for="sel1">Contact Language:</label>
+        <select class="form-control" id="sel1">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Telugu</option>
+          <option>Tamil</option>
+          <option>Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="placeOfBith">Place Of Birth:</label>
+        <input type="email" class="form-control" id="placeOfBith" placeholder="Enter the Place Of Birth" name="placeOfBith">
+      </div>
+
+      <div class="form-group">
+        <label for="sel1">Country Of Birth:</label>
+        <select class="form-control" id="sel1">
+          <option>India</option>
+          <option>America</option>
+          <option>China</option>
+          <option>Germany</option>
+          <option>SriLanka</option>
+          <option>Pakistan</option>
+          <option>Dubai</option>
+          <option>Canada</option>
+          <option>England</option>
+          <option>Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="relationStatus">Relationship Status:</label>
+        <select class="form-control" id="relationStatus">
+          <option>Single</option>
+          <option>Married</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="alternateEmail">Alternate Email:</label>
+        <input type="email" class="form-control" id="alternateEmail" placeholder="Enter the Alter Email Address" name="alternateEmail">
+      </div>
+
+      <div class="form-group">
+        <label for="emailBelongsTo">Alternate Email Address Belongs To:</label>
+        <select class="form-control" id="emailBelongsTo">
+          <option>Me</option>
+          <option>Family</option>
+          <option>Friend</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="otherName">Are you now or have you ever been known by another name?
+        </label>
+        <select class="form-control" id="otherName">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="familyName">Family Name:</label>
+        <input type="text" class="form-control" id="familyName" placeholder="Enter Family Name" name="familyName">
+      </div>
+
+      <div class="form-group">
+        <label for="planToLeaveUk">Date you plan to leave the UK :</label>
+        <input type="date" id="planToLeaveUk" name="planToLeaveUk">      
+       </div>
+
+       <div class="form-group">
+        <label for="planToArriveUk">Date you plan to Arrive the UK :</label>
+        <input type="date" id="planToArriveUk" name="planToArriveUk">      
+       </div>
+
+       <div class="form-group">
+        <label for="purposeOfVisa">Purpose Of Visa:</label>
+        <input type="text" class="form-control" id="purposeOfVisa" placeholder="Enter Purpose Of Visa" name="purposeOfVisa">
+      </div>
+
+      
+      <div class="form-group">
+        <label for="howMuchPaid">How much will you be paid:</label>
+        <input type="text" class="form-control" id="howMuchPaid" placeholder="Enter How Much you Paid In Numbers" name="howMuchPaid">
+      </div>
+
+      <div class="form-group">
+        <label for="whoPaid">Who will be paying you while you are in the UK:</label>
+        <input type="text" class="form-control" id="whoPaid" placeholder="Enter Who will be paying you" name="whoPaid">
+      </div>
+
+      <div class="form-group">
+        <label for="issueDate">Passport Issue Date :</label>
+        <input type="date" id="issueDate" name="issueDate">      
+       </div>
+
+       <div class="form-group">
+        <label for="expiryDate">Passport Expiry Date :</label>
+        <input type="date" id="expiryDate" name="expiryDate">      
+       </div>
+
+       <div class="form-group">
+        <label for="contactTelephone">Are you able to be contacted by telephone?
+        </label>
+        <select class="form-control" id="contactTelephone">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="medicalTreatment">Have you ever been given medical treatment in the UK?
+        </label>
+        <select class="form-control" id="medicalTreatment">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ukLicence">Do you have a UK driving licence?
+        </label>
+        <select class="form-control" id="ukLicence">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ukAddress">UK Address:</label>
+        <input type="text" class="form-control" id="ukAddress" placeholder="Enter Uk Address" name="ukAddress">
+      </div>
+
+      <div class="form-group">
+        <label for="ownershipStatus">What is the ownership status of your home? 
+        </label>
+        <select class="form-control" id="ownershipStatus">
+          <option>Own</option>
+          <option>Rented</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nicEmployeersAddress">NIC Employeer's Address:</label>
+        <input type="text" class="form-control" id="nicEmployeersAddress" placeholder="Enter The Address" name="nicEmployeersAddress">
+      </div>
+
+      <div class="form-group">
+        <label for="employeeStatus">What is your employment status?</label>
+        <input type="text" class="form-control" id="employeeStatus" placeholder="Enter The Status" name="employeeStatus">
+      </div>
+
+      <h2>Dependent Details</h2>
+      <div class="form-group">
+        <label for="ddFamilyName">Family Name:</label>
+        <input type="text" class="form-control" id="ddFamilyName" placeholder="Enter The Name" name="ddFamilyName">
+      </div>
+
+      <div class="form-group">
+        <label for="ddFamilyNames">Given Family Names:</label>
+        <input type="text" class="form-control" id="ddFamilyNames" placeholder="Enter The Names" name="ddFamilyNames">
+      </div>
+
+      <div class="form-group">
+        <label for="relationToPerson">What is this person's relationship to you?</label>
+        <input type="text" class="form-control" id="relationToPerson" placeholder="Enter The Relation" name="relationToPerson">
+      </div>
+
+      <h2>Travel history(UK)</h2>
+      <div class="form-group">
+        <label for="previousVisitCountry">What Is Your Previous Country Visit:</label>
+        <input type="text" class="form-control" id="previousVisitCountry" placeholder="Enter The Country" name="previousVisitCountry">
+      </div>
+
+      <div class="form-group">
+        <label for="refusedVisa">Have You Ever Been Refused A Visa?</label>        
+        <select class="form-control" id="ownershipStatus">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="refusedBorder">Have You Ever Been Refused entry at the border?</label>
+        <select class="form-control" id="refusedBorder">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+
+      <div class="checkbox">
+        <label><input type="checkbox" name="terms"> I confirm that I understand and accept these conditions</label>
+      </div>
+      <button type="submit" class="btn btn-info">Register</button>
+    </form>
+  </div>
+  
